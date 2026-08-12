@@ -1,0 +1,50 @@
+name: Build repo index and publish
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'debs/**'
+      - 'Release'
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dpkg-dev (for dpkg-scanpackages)
+        run: sudo apt-get update && sudo apt-get install -y dpkg-dev
+
+      - name: Generate Packages index
+        run: |
+          mkdir -p site/debs
+          cp debs/*.deb site/debs/ 2>/dev/null || true
+          cp Release site/Release
+          if [ -f icon.png ]; then cp icon.png site/CydiaIcon.png; fi
+          cd site
+          dpkg-scanpackages debs /dev/null > Packages
+          gzip -9c Packages > Packages.gz
+          cat Release >> /dev/null # no-op, keep Release as-is
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
