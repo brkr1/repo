@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brkr1 Repository</title>
+    <link rel="icon" type="image/png" href="https://i.imgur.com/F3rRZ0H.png">
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --card-bg: rgba(22, 27, 34, 0.75);
+            --text-primary: #ffffff;
+            --text-secondary: #8b949e;
+            --accent-glow: rgba(88, 86, 214, 0.25);
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, sans-serif;
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(88, 86, 214, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.15) 0px, transparent 50%);
+            color: var(--text-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            padding: 2.5rem 2rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+                        0 0 40px var(--accent-glow);
+            max-width: 380px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            margin: 0 auto 1.5rem;
+            display: block;
+            object-fit: cover;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4),
+                        0 0 20px rgba(88, 86, 214, 0.3);
+        }
+
+        h1 {
+            margin: 0 0 0.5rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 2rem;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            padding: 14px 0;
+            border-radius: 14px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            box-sizing: border-box;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn-sileo {
+            background: linear-gradient(135deg, #5856d6, #4540c1);
+            box-shadow: 0 4px 12px rgba(88, 86, 214, 0.3);
+        }
+
+        .btn-zebra {
+            background: linear-gradient(135deg, #ff9500, #d67d00);
+            box-shadow: 0 4px 12px rgba(255, 149, 0, 0.3);
+        }
+
+        .btn-copy {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-copy:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img class="avatar" src="https://i.imgur.com/uryW0Bl.png" alt="brkr1 Repo Logo">
+        <h1>brkr1 Repository</h1>
+        <p>Enhance your device with custom tweaks and packages.</p>
+
+        <div class="btn-container">
+            <a class="btn btn-sileo" href="sileo://source/https://brkr1.github.io/repo/">
+                Add to Sileo
+            </a>
+            <a class="btn btn-zebra" href="zbra://sources/add/https://brkr1.github.io/repo/">
+                Add to Zebra
+            </a>
+            <button class="btn btn-copy" onclick="copyRepoURL()" id="copyBtn">
+                📋 Copy Repo Link
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function copyRepoURL() {
+            const repoUrl = "https://brkr1.github.io/repo/";
+            navigator.clipboard.writeText(repoUrl).then(() => {
+                const btn = document.getElementById("copyBtn");
+                btn.innerHTML = "✨ Copied to Clipboard!";
+                setTimeout(() => {
+                    btn.innerHTML = "📋 Copy Repo Link";
+                }, 2000);
+            });
+        }
+    </script>
+
+</body>
+</html>
