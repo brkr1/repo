@@ -6,6 +6,7 @@ on:
     paths:
       - 'debs/**'
       - 'Release'
+      - 'index.html'
   workflow_dispatch: {}
 
 jobs:
@@ -25,6 +26,7 @@ jobs:
           cp debs/*.deb site/debs/ 2>/dev/null || true
           cp Release site/Release
           if [ -f icon.png ]; then cp icon.png site/CydiaIcon.png; fi
+          if [ -f index.html ]; then cp index.html site/index.html; fi
           cd site
           dpkg-scanpackages debs /dev/null > Packages
           gzip -9c Packages > Packages.gz
