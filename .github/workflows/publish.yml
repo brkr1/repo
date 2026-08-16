@@ -7,6 +7,9 @@ on:
       - 'debs/**'
       - 'Release'
       - 'index.html'
+      - 'depictions/**'
+      - 'sileo-featured.json'
+      - 'featured/**'
   workflow_dispatch: {}
 
 jobs:
@@ -27,6 +30,9 @@ jobs:
           cp Release site/Release
           if [ -f icon.png ]; then cp icon.png site/CydiaIcon.png; fi
           if [ -f index.html ]; then cp index.html site/index.html; fi
+          if [ -d depictions ]; then cp -r depictions site/depictions; fi
+          if [ -d featured ]; then cp -r featured site/featured; fi
+          if [ -f sileo-featured.json ]; then cp sileo-featured.json site/sileo-featured.json; fi
           cd site
           dpkg-scanpackages debs /dev/null > Packages
           gzip -9c Packages > Packages.gz

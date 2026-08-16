@@ -1,0 +1,55 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "headerImage": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.islandaura/screenshots/header.png",
+  "tintColor": "#00D4FF",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Island Aura"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Draws a customizable neon aura around the Dynamic Island that **live-tracks its real size and shape** as it expands and collapses — for calls, timers, media, Face ID, and anything else that uses it.\n\n**Three styles**: Glow, Pulse, Tint. **Any color**, via a full color picker. Settings apply instantly, no respring needed."
+        },
+        {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 10,
+          "itemSize": "{280, 606}",
+          "screenshots": [
+            { "url": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.islandaura/screenshots/1.png" },
+            { "url": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.islandaura/screenshots/2.png" },
+            { "url": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.islandaura/screenshots/3.png" }
+          ]
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionButtonView",
+          "title": "Source on GitHub",
+          "action": "https://github.com/brkr1/IslandAura",
+          "openExternal": true
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Version History"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 0.2\n- Settings now apply live — Enabled, Mode and Color all take effect instantly, no respring needed\n- Glow style accentuated — bigger shadow bloom\n- Native Sileo depiction with screenshots and changelog\n\n### 0.1\n- Initial public release: live-tracking Dynamic Island aura, Glow/Pulse/Tint styles, full color picker"
+        }
+      ]
+    }
+  ]
+}

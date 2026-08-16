@@ -1,0 +1,31 @@
+{
+  "class": "FeaturedBannersView",
+  "itemSize": "{263, 148}",
+  "itemCornerRadius": 10,
+  "banners": [
+    {
+      "url": "https://brkr1.github.io/repo/featured/islandaura.png",
+      "title": "Island Aura",
+      "package": "com.brkr1.tweaks.islandaura",
+      "hideShadow": false
+    },
+    {
+      "url": "https://brkr1.github.io/repo/featured/spotilovereborn.png",
+      "title": "Spotilove Reborn",
+      "package": "com.brkr1.tweaks.spotilovereborn",
+      "hideShadow": false
+    },
+    {
+      "url": "https://brkr1.github.io/repo/featured/notescreationdate16.png",
+      "title": "Notes Creation Date 16",
+      "package": "com.brkr1.tweaks.notescreationdate16",
+      "hideShadow": false
+    },
+    {
+      "url": "https://brkr1.github.io/repo/featured/lyrication.png",
+      "title": "Lyrication Reborn",
+      "package": "com.thatmarcel.tweaks.lyrication",
+      "hideShadow": false
+    }
+  ]
+}
