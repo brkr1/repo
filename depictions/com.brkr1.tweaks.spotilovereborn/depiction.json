@@ -1,0 +1,45 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "headerImage": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.spotilovereborn/screenshots/header.png",
+  "tintColor": "#1DB954",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Spotilove Reborn"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Adds a heart button to the lock screen to like or unlike the currently playing Spotify track, without opening the app.\n\nWorks across three processes: SpringBoard draws the button, com.apple.MediaRemoteUI supplies its real position on iOS 17+, and Spotify itself handles the actual like/unlike action. State stays in sync between them in real time."
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionButtonView",
+          "title": "Source on GitHub",
+          "action": "https://github.com/brkr1/SpotiLoveReborn",
+          "openExternal": true
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Version History"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.3\niOS 17 finally working, plus NextUp3 compatibility\n\n### 1.2\nFixed heart fill state (finally)\n\n### 1.1\nFixed heart state sync, unlike, and dynamic position\n\n### 1.0\nInitial release"
+        }
+      ]
+    }
+  ]
+}

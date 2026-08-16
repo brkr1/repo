@@ -1,0 +1,44 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "tintColor": "#FA2D48",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Lyrication Reborn"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Revives the Lyrication tweak: fixes lyrics fetching after the original textyl.co API went down, now pulling from LRCLIB instead. Includes dedicated iOS 17 support, hooking directly into com.apple.MediaRemoteUI since the real lock screen content on that iOS isn't drawn by SpringBoard."
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionButtonView",
+          "title": "Source on GitHub",
+          "action": "https://github.com/brkr1/LyricationReborn",
+          "openExternal": true
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Version History"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 2.5.1\nInitial release"
+        }
+      ]
+    }
+  ]
+}

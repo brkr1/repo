@@ -1,0 +1,45 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "headerImage": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.notescreationdate16/screenshots/header.png",
+  "tintColor": "#FFCC00",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Notes Creation Date 16"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Shows each note's creation date instead of its last edited date in the Notes app list. A port of the original creation date tweak, updated to work on iOS 16 rootless jailbreaks."
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionButtonView",
+          "title": "Source on GitHub",
+          "action": "https://github.com/brkr1/NotesCreationDate16",
+          "openExternal": true
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Version History"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.0\nInitial release"
+        }
+      ]
+    }
+  ]
+}
