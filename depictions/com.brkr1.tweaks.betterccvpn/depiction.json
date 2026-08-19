@@ -1,0 +1,53 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "headerImage": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.betterccvpn/screenshots/header.png",
+  "tintColor": "#0A84FF",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "BetterCCVPN"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "A Control Center module to switch and connect VPNs without leaving Control Center.\n\nTap the tile to toggle the selected VPN on/off. Hold it to expand a list of every VPN configured on the device (personal, enterprise, and app-based) and pick a different one, with a checkmark on whichever is currently selected."
+        },
+        {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 10,
+          "itemSize": "{280, 606}",
+          "screenshots": [
+            { "url": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.betterccvpn/screenshots/1.png", "accessibilityText": "BetterCCVPN screenshot 1" }
+          ]
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionButtonView",
+          "title": "Source on GitHub",
+          "action": "https://github.com/brkr1/BetterCCVPN",
+          "openExternal": true
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Version History"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 0.1\nInitial release: toggle the selected VPN on/off from Control Center, hold to pick between all configured VPNs"
+        }
+      ]
+    }
+  ]
+}
