@@ -20,6 +20,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Work around flaky GitHub Actions apt mirror
+        run: echo "http://archive.ubuntu.com/ubuntu" | sudo tee /etc/apt/apt-mirrors.txt
+
       - name: Install dpkg-dev (for dpkg-scanpackages)
         run: sudo apt-get update && sudo apt-get install -y dpkg-dev
 
