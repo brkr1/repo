@@ -45,7 +45,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### 0.2\n- Settings now apply live: Enabled, Mode and Color all take effect instantly, no respring needed\n- Glow style accentuated, bigger shadow bloom\n- Native Sileo depiction with screenshots and changelog\n\n### 0.1\n- Initial public release: live-tracking Dynamic Island aura, Glow/Pulse/Tint styles, full color picker"
+          "markdown": "### 0.3\n- Performance: skip redundant frame/path updates when the Dynamic Island's geometry hasn't actually changed\n\n### 0.2\n- Settings now apply live: Enabled, Mode and Color all take effect instantly, no respring needed\n- Glow style accentuated, bigger shadow bloom\n- Native Sileo depiction with screenshots and changelog\n\n### 0.1\n- Initial public release: live-tracking Dynamic Island aura, Glow/Pulse/Tint styles, full color picker"
         }
       ]
     }
