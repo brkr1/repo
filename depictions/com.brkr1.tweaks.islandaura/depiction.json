@@ -1,5 +1,5 @@
 {
-  "minVersion": "0.4",
+  "minVersion": "0.5",
   "class": "DepictionTabView",
   "headerImage": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.islandaura/screenshots/header.png",
   "tintColor": "#00D4FF",
@@ -45,7 +45,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### 0.4\n- New style: Rainbow, a full-spectrum ring that spins around the island\n- Fixed a battery inefficiency in the shadow rendering shared by all styles\n\n### 0.3\n- Performance: skip redundant frame/path updates when the Dynamic Island's geometry hasn't actually changed\n\n### 0.2\n- Settings now apply live: Enabled, Mode and Color all take effect instantly, no respring needed\n- Glow style accentuated, bigger shadow bloom\n- Native Sileo depiction with screenshots and changelog\n\n### 0.1\n- Initial public release: live-tracking Dynamic Island aura, Glow/Pulse/Tint styles, full color picker"
+          "markdown": "### 0.5\n- Fixed a regression from 0.4 where the aura's shadow rendered as a solid glowing disc covering the island's content, instead of blooming around the outline, for Glow/Pulse/Rainbow\n\n### 0.4\n- New style: Rainbow, a full-spectrum ring that spins around the island\n- Fixed a battery inefficiency in the shadow rendering shared by all styles\n\n### 0.3\n- Performance: skip redundant frame/path updates when the Dynamic Island's geometry hasn't actually changed\n\n### 0.2\n- Settings now apply live: Enabled, Mode and Color all take effect instantly, no respring needed\n- Glow style accentuated, bigger shadow bloom\n- Native Sileo depiction with screenshots and changelog\n\n### 0.1\n- Initial public release: live-tracking Dynamic Island aura, Glow/Pulse/Tint styles, full color picker"
         }
       ]
     }
