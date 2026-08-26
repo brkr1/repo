@@ -1,0 +1,53 @@
+{
+  "minVersion": "0.1",
+  "class": "DepictionTabView",
+  "headerImage": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.docksearchreborn/screenshots/header.png",
+  "tintColor": "#0A84FF",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "DockSearch Reborn"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Adds a raisable search bar to the dock. Raise it, type, and it opens your default browser (or a chosen search engine) with the query.\n\nA rootless/roothide port of Ginsu's original DockSearch (GPLv3), which never got rootless support. Adjustable background opacity and vertical offset."
+        },
+        {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 10,
+          "itemSize": "{280, 606}",
+          "screenshots": [
+            { "url": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.docksearchreborn/screenshots/1.png", "accessibilityText": "DockSearch Reborn screenshot 1" }
+          ]
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionButtonView",
+          "title": "Source on GitHub",
+          "action": "https://github.com/brkr1/DockSearch-Reborn",
+          "openExternal": true
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Version History"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 0.1\nInitial release: rootless/roothide port of Ginsu's DockSearch, rewritten in Theos/Logos. Raisable dock search bar, choice of search engine, adjustable background opacity, and adjustable position (above/below icons, plus vertical offset)."
+        }
+      ]
+    }
+  ]
+}
