@@ -1,5 +1,5 @@
 {
-  "minVersion": "0.1",
+  "minVersion": "0.2",
   "class": "DepictionTabView",
   "headerImage": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.docksearchreborn/screenshots/header.png",
   "tintColor": "#0A84FF",
@@ -45,7 +45,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### 0.1\nInitial release: rootless/roothide port of Ginsu's DockSearch, rewritten in Theos/Logos. Raisable dock search bar, choice of search engine, adjustable background opacity, and adjustable position (above/below icons, plus vertical offset)."
+          "markdown": "### 0.2\n- Fixed Cancel and tapping outside the search bar not dismissing the keyboard or clearing the typed text\n- The dock icons no longer move when the search bar rises - only the bar itself does\n- The background dims behind the raised search bar"
         }
       ]
     }
