@@ -14,7 +14,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "Adds a heart button to the lock screen to like or unlike the currently playing Spotify track, without opening the app."
+          "markdown": "Adds a heart button to the lock screen and the Dynamic Island's expanded player to like or unlike the currently playing Spotify track, without opening the app."
         },
         {
           "class": "DepictionSeparatorView"
@@ -37,7 +37,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### 1.4\nFixed the heart dropping out of line when the lock screen player is expanded to full screen (iOS 16).\n\n### 1.3\niOS 17 finally working, plus NextUp3 compatibility\n\n### 1.2\nFixed heart fill state (finally)\n\n### 1.1\nFixed heart state sync, unlike, and dynamic position\n\n### 1.0\nInitial release"
+          "markdown": "### 1.5\nAdded the heart to the Dynamic Island's expanded now-playing player.\n\n### 1.4\nFixed the heart dropping out of line when the lock screen player is expanded to full screen (iOS 16).\n\n### 1.3\niOS 17 finally working, plus NextUp3 compatibility\n\n### 1.2\nFixed heart fill state (finally)\n\n### 1.1\nFixed heart state sync, unlike, and dynamic position\n\n### 1.0\nInitial release"
         }
       ]
     }
