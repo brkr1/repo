@@ -14,7 +14,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "Adds a heart button to the lock screen to like or unlike the currently playing Spotify track, without opening the app.\n\nWorks across three processes: SpringBoard draws the button, com.apple.MediaRemoteUI supplies its real position on iOS 17+, and Spotify itself handles the actual like/unlike action. State stays in sync between them in real time."
+          "markdown": "Adds a heart button to the lock screen to like or unlike the currently playing Spotify track, without opening the app.\n\nWorks across two processes: com.apple.MediaRemoteUI draws the button against the real transport controls (so it stays aligned in both the compact and full-screen player layouts), and Spotify itself handles the actual like/unlike action. State stays in sync between them in real time."
         },
         {
           "class": "DepictionSeparatorView"
@@ -37,7 +37,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### 1.3\niOS 17 finally working, plus NextUp3 compatibility\n\n### 1.2\nFixed heart fill state (finally)\n\n### 1.1\nFixed heart state sync, unlike, and dynamic position\n\n### 1.0\nInitial release"
+          "markdown": "### 1.4\nFixed the heart dropping out of line when the lock screen player is expanded to full screen (iOS 16).\n\n### 1.3\niOS 17 finally working, plus NextUp3 compatibility\n\n### 1.2\nFixed heart fill state (finally)\n\n### 1.1\nFixed heart state sync, unlike, and dynamic position\n\n### 1.0\nInitial release"
         }
       ]
     }

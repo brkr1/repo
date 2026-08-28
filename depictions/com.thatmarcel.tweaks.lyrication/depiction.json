@@ -13,7 +13,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "Revives the Lyrication tweak: fixes lyrics fetching after the original textyl.co API went down, now pulling from LRCLIB instead. Includes dedicated iOS 17 support, hooking directly into com.apple.MediaRemoteUI since the real lock screen content on that iOS isn't drawn by SpringBoard."
+          "markdown": "Revives the Lyrication tweak: fixes lyrics fetching after the original textyl.co API went down, now pulling from LRCLIB instead. The lock screen LX button hooks directly into com.apple.MediaRemoteUI on iOS 16+ and positions itself against the real transport controls, since the lock screen content on those versions isn't drawn by SpringBoard."
         },
         {
           "class": "DepictionSeparatorView"
@@ -36,7 +36,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### 2.5.1\nInitial release"
+          "markdown": "### 2.5.2\nFixed the LX button dropping out of line when the lock screen player is expanded to full screen (iOS 16).\n\n### 2.5.1\nInitial release"
         }
       ]
     }
