@@ -14,7 +14,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "Adds a heart button to the lock screen to like or unlike the currently playing Spotify track, without opening the app.\n\nWorks across two processes: com.apple.MediaRemoteUI draws the button against the real transport controls (so it stays aligned in both the compact and full-screen player layouts), and Spotify itself handles the actual like/unlike action. State stays in sync between them in real time."
+          "markdown": "Adds a heart button to the lock screen to like or unlike the currently playing Spotify track, without opening the app."
         },
         {
           "class": "DepictionSeparatorView"
