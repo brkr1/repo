@@ -1,0 +1,44 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "tintColor": "#34C759",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "PowerCuff Auto Off"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Automates PowerCuff: turns it off while the phone is charging and reenables it as soon as you unplug.\n\nBecause charging with it enabled is slow as a mf and I always forget to disable it!"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionButtonView",
+          "title": "Source on GitHub",
+          "action": "https://github.com/brkr1/PowerCuffAutoOff",
+          "openExternal": true
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Version History"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 0.1\nInitial release: turns PowerCuff off while charging, restores it on unplug"
+        }
+      ]
+    }
+  ]
+}
