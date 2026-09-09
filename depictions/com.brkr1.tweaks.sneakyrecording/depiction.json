@@ -1,0 +1,53 @@
+{
+  "minVersion": "0.1",
+  "class": "DepictionTabView",
+  "headerImage": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.sneakyrecording/screenshots/header.png",
+  "tintColor": "#FF3B30",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "SneakyRecording"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "A discreet screen recording tweak. **Swipe left-to-right on the status bar to start recording, right-to-left to stop**. No Dynamic Island recording indicator for recordings started this way, and the file saves straight to Documents/SneakyRecording instead of Photos.\n\nControl Center's own screen recording toggle still works exactly as Apple intended, indicator and all."
+        },
+        {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 10,
+          "itemSize": "{280, 606}",
+          "screenshots": [
+            { "url": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.sneakyrecording/screenshots/1.png", "accessibilityText": "SneakyRecording screenshot 1" }
+          ]
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionButtonView",
+          "title": "Source on GitHub",
+          "action": "https://github.com/brkr1/SneakyRecording",
+          "openExternal": true
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Version History"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 0.1\nInitial release: status bar swipe gesture to start/stop a screen recording with no Dynamic Island indicator. Saved straight to Documents/SneakyRecording. Haptic feedback on every swipe, a toast on start."
+        }
+      ]
+    }
+  ]
+}
