@@ -1,5 +1,5 @@
 {
-  "minVersion": "0.1",
+  "minVersion": "0.2",
   "class": "DepictionTabView",
   "headerImage": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.sneakyrecording/screenshots/header.png",
   "tintColor": "#FF3B30",
@@ -14,7 +14,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "A discreet screen recording tweak. **Swipe left-to-right on the status bar to start recording, right-to-left to stop**. No Dynamic Island recording indicator for recordings started this way, and the file saves straight to Documents/SneakyRecording instead of Photos.\n\nControl Center's own screen recording toggle still works exactly as Apple intended, indicator and all."
+          "markdown": "**Swipe left-to-right on the status bar to start recording, right-to-left to stop**. No Dynamic Island recording indicator for recordings started this way, and the file saves straight to Documents/SneakyRecording instead of Photos.\n\nControl Center's own screen recording toggle still works exactly as Apple intended, indicator and all."
         },
         {
           "class": "DepictionScreenshotsView",
@@ -45,7 +45,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### 0.1\nInitial release: status bar swipe gesture to start/stop a screen recording with no Dynamic Island indicator. Saved straight to Documents/SneakyRecording. Haptic feedback on every swipe, a toast on start."
+          "markdown": "### 0.2\nNo longer leaves a debug log file behind in Documents\n\n### 0.1\nInitial release: status bar swipe gesture to start/stop a screen recording with no Dynamic Island indicator. Saved straight to Documents/SneakyRecording. Haptic feedback on every swipe, a toast on start."
         }
       ]
     }
