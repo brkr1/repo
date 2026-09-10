@@ -1,0 +1,52 @@
+{
+  "minVersion": "0.1",
+  "class": "DepictionTabView",
+  "tintColor": "#FF3B30",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "NotRecording Reborn"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Shows an obtrusive banner over the video viewfinder - Camera app and Lock Screen quick-camera - whenever you're in video mode but **not actually recording**, so you never hold up your phone through an entire concert thinking you're filming it.\n\nAn independent, from-scratch reimplementation of [marcoroth's NotRecording](https://github.com/marcoroth/NotRecording), rebuilt for modern iOS and rootless jailbreaks."
+        },
+        {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 10,
+          "itemSize": "{280, 606}",
+          "screenshots": [
+            { "url": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.notrecordingreborn/screenshots/1.jpg", "accessibilityText": "NotRecording Reborn screenshot 1" }
+          ]
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionButtonView",
+          "title": "Source on GitHub",
+          "action": "https://github.com/brkr1/NotRecordingReborn",
+          "openExternal": true
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Version History"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 0.1\nInitial release"
+        }
+      ]
+    }
+  ]
+}
