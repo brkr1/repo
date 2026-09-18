@@ -45,7 +45,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### 0.1\nInitial release: full up-next queue, tap to play, drag to reorder, swipe to remove. Trigger button on the Lock Screen, Control Center (compact and expanded), and Dynamic Island."
+          "markdown": "### 0.2\nFixed the trigger button briefly jumping out of position on the Lock Screen when it switches between the compact and full-screen player.\n\n### 0.1\nInitial release: full up-next queue, tap to play, drag to reorder, swipe to remove. Trigger button on the Lock Screen, Control Center (compact and expanded), and Dynamic Island."
         }
       ]
     }
