@@ -13,14 +13,15 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "See your entire Spotify queue, not just the next track, in a sheet you can pull up from the Lock Screen, Control Center, or the Dynamic Island. Tap any track to jump to it immediately, drag to reorder the queue, or swipe to remove one, all without opening the app."
+          "markdown": "See your entire Spotify queue in a sheet you can pull up from the Lock Screen, Control Center, or the Dynamic Island. Tap any track to jump to it immediately, drag to reorder the queue, or swipe to remove one, all without opening the app."
         },
         {
           "class": "DepictionScreenshotsView",
           "itemCornerRadius": 10,
           "itemSize": "{280, 606}",
           "screenshots": [
-            { "url": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.spotiqueue/screenshots/1.gif", "accessibilityText": "SpotiQueue demo" }
+            { "url": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.spotiqueue/screenshots/1.png", "accessibilityText": "SpotiQueue screenshot 1" },
+            { "url": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.spotiqueue/screenshots/2.png", "accessibilityText": "SpotiQueue screenshot 2" }
           ]
         },
         {
