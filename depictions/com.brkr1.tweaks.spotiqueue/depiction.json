@@ -1,0 +1,52 @@
+{
+  "minVersion": "0.1",
+  "class": "DepictionTabView",
+  "tintColor": "#1DB954",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "SpotiQueue"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "See your entire Spotify queue, not just the next track, in a sheet you can pull up from the Lock Screen, Control Center, or the Dynamic Island. Tap any track to jump to it immediately, drag to reorder the queue, or swipe to remove one, all without opening the app."
+        },
+        {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 10,
+          "itemSize": "{280, 606}",
+          "screenshots": [
+            { "url": "https://brkr1.github.io/repo/depictions/com.brkr1.tweaks.spotiqueue/screenshots/1.gif", "accessibilityText": "SpotiQueue demo" }
+          ]
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionButtonView",
+          "title": "Source on GitHub",
+          "action": "https://github.com/brkr1/SpotiQueue",
+          "openExternal": true
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Version History"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 0.1\nInitial release: full up-next queue, tap to play, drag to reorder, swipe to remove. Trigger button on the Lock Screen, Control Center (compact and expanded), and Dynamic Island."
+        }
+      ]
+    }
+  ]
+}
