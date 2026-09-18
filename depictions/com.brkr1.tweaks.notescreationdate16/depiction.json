@@ -37,7 +37,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### 1.0\nInitial release"
+          "markdown": "### 1.1\nFixed a crash that could happen the first time Notes was opened after a fresh launch.\n\n### 1.0\nInitial release"
         }
       ]
     }
